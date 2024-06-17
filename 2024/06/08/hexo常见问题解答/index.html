@@ -7,7 +7,8 @@
     <meta name="keywords" content="hexo常见问题解答, Chuanshanak">
     <meta name="description" content="hexo的Matery主题代码块显示问题你的代码块是否显示为这样?
 
-尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果代码链接12345678910111213highlight:                      #">
+尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果代码链接highlight:                      # 代码块的设置
+  enable:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -418,21 +419,43 @@
             <div id="articleContent">
                 <h2 id="hexo的Matery主题代码块显示问题"><a href="#hexo的Matery主题代码块显示问题" class="headerlink" title="hexo的Matery主题代码块显示问题"></a>hexo的Matery主题代码块显示问题</h2><p>你的代码块是否显示为这样?</p>
 <p><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221035.png" alt=""></p>
-<p>尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果<a target="_blank" rel="noopener" href="https://www.cnblogs.com/jijunhao/p/16972921.html">代码链接</a><br></p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span>                      <span class="comment"># 代码块的设置</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span>                 <span class="comment"># 开启代码块高亮</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span>             <span class="comment"># 显示行数</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span>            <span class="comment"># 如果未指定语言，则启用自动检测</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">''</span>               <span class="comment"># 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">''</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><br>有没有发现<code>highlight:</code>上面还有一行？<p></p>
+<p>尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果<a target="_blank" rel="noopener" href="https://www.cnblogs.com/jijunhao/p/16972921.html">代码链接</a><br></p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">highlight</span><span class="token punctuation">:</span>                      <span class="token comment"># 代码块的设置</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment"># 开启代码块高亮</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>             <span class="token comment"># 显示行数</span>
+  <span class="token key atrule">auto_detect</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>            <span class="token comment"># 如果未指定语言，则启用自动检测</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>               <span class="token comment"># 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs</span>
+  <span class="token key atrule">wrap</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">hljs</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>有没有发现<code>highlight:</code>上面还有一行？<p></p>
 <p><code>syntax_highlighter: highlight.js</code></p>
 <p>我们需要修改这一行、将<code>highlight.js</code>改为<code>prismjs</code>才行</p>
 <blockquote>
-<p>只需要做如下修改即可、因为我们的primjs应该都是v7.0.0及以上：<br></p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">syntax_highlighter:</span> <span class="string">prismjs</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">preprocess:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_threshold:</span> <span class="number">0</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">''</span></span><br></pre></td></tr></tbody></table></figure><br><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221627.png" alt=""><p></p>
+<p>只需要做如下修改即可、因为我们的primjs应该都是v7.0.0及以上：<br></p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># _config.yml</span>
+<span class="token key atrule">syntax_highlighter</span><span class="token punctuation">:</span> prismjs
+<span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">line_threshold</span><span class="token punctuation">:</span> <span class="token number">0</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221627.png" alt=""><p></p>
 </blockquote>
 <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/syntax-highlight#preprocess">官网对这个问题的说明</a></p>
 <p>然后就显示正常了<br><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221811.png" alt=""></p>
 <h2 id="Nunjucks-Errorexpected-variable-end"><a href="#Nunjucks-Errorexpected-variable-end" class="headerlink" title="Nunjucks Errorexpected variable end"></a>Nunjucks Errorexpected variable end</h2><p>在数学公式中遇到这个问题<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
-<p><strong>ctrl+f</strong> 打开搜索<br></p><figure class="highlight md"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{{ 替换为   { {即中间加上空格</span><br><span class="line"></span><br><span class="line">}}替换为} }即中间加上空格</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><strong>ctrl+f</strong> 打开搜索<br></p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">{{ 替换为   { {即中间加上空格
+
+}}替换为} }即中间加上空格<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45333934/article/details/108274320">Nunjucks Error: 解决方案</a></p>
-<h2 id="设置valine评论时显示qq头像"><a href="#设置valine评论时显示qq头像" class="headerlink" title="设置valine评论时显示qq头像"></a>设置valine评论时显示qq头像</h2><p>找了好久也没有搜到、最后我在这篇文章里找到了<sup><a href="#fn_2" id="reffn_2">2</a></sup> <a target="_blank" rel="noopener" href="https://wallleap.gitbook.io/blog/ji-shu-za-tan/valine-ping-lun-xi-tong-shi-yong-jiao-cheng">valine 评论系统使用教程</a>我看matery主题里也没有enableQQ这一项<br>解决方法:<br>在hexo-theme-matery —— layout—-partial—-valine.ejs文件里(或者直接Ctrl+P搜索valine.ejs)在大概251行的位置加上<br></p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enableQQ: true,</span><br></pre></td></tr></tbody></table></figure><br>就可以了、注意后面的逗号<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240609220546.png" alt=""><p></p>
-<h2 id="将网站提交到谷歌搜索-hexo-theme-matery主题"><a href="#将网站提交到谷歌搜索-hexo-theme-matery主题" class="headerlink" title="将网站提交到谷歌搜索(hexo-theme-matery主题)"></a>将网站提交到谷歌搜索(hexo-theme-matery主题)</h2><p>进入网站<a target="_blank" rel="noopener" href="https://search.google.com/search-console/welcome">/search-console</a><br>填写的自己的网站地址<sup><a href="#fn_3" id="reffn_3">3</a></sup>:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610104814.png" alt=""><br>选择推荐验证方式、下载html文件到:<br><strong>hexo-theme-matery—source</strong>里、如果你的主题是next就是上传到<strong>hexo-theme-next—source</strong>里<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105134.png" alt=""><br>在git执行:<br></p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></tbody></table></figure><br>等待一分钟:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105250.png" alt=""><br>这样就验证成功了<p></p>
-<h3 id="提交到必应"><a href="#提交到必应" class="headerlink" title="提交到必应"></a>提交到必应</h3><p>也是和谷歌一样的操作方式、下载文件到<strong>hexo-theme-matery—source</strong>里即可然后<br></p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp; hexo g -d</span><br></pre></td></tr></tbody></table></figure><br>等一会就可以去验证了、虽然这里是xml文件但验证方式和html文件没有区别<br>记得提交网站地图<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610111500.png" alt=""><br>然后请求编制索引:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610111748.png" alt=""><p></p>
-<h3 id="站点地图申请"><a href="#站点地图申请" class="headerlink" title="站点地图申请"></a>站点地图申请</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">hexo hexo cl &amp; hexo g -d</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="设置valine评论时显示qq头像"><a href="#设置valine评论时显示qq头像" class="headerlink" title="设置valine评论时显示qq头像"></a>设置valine评论时显示qq头像</h2><p>找了好久也没有搜到、最后我在这篇文章里找到了<sup><a href="#fn_2" id="reffn_2">2</a></sup> <a target="_blank" rel="noopener" href="https://wallleap.gitbook.io/blog/ji-shu-za-tan/valine-ping-lun-xi-tong-shi-yong-jiao-cheng">valine 评论系统使用教程</a>我看matery主题里也没有enableQQ这一项<br>解决方法:<br>在hexo-theme-matery —— layout—-partial—-valine.ejs文件里(或者直接Ctrl+P搜索valine.ejs)在大概251行的位置加上<br></p><pre class="line-numbers language-none"><code class="language-none">enableQQ: true,<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>就可以了、注意后面的逗号<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240609220546.png" alt=""><p></p>
+<h2 id="将网站提交到谷歌搜索-hexo-theme-matery主题"><a href="#将网站提交到谷歌搜索-hexo-theme-matery主题" class="headerlink" title="将网站提交到谷歌搜索(hexo-theme-matery主题)"></a>将网站提交到谷歌搜索(hexo-theme-matery主题)</h2><p>进入网站<a target="_blank" rel="noopener" href="https://search.google.com/search-console/welcome">/search-console</a><br>填写的自己的网站地址<sup><a href="#fn_3" id="reffn_3">3</a></sup>:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610104814.png" alt=""><br>选择推荐验证方式、下载html文件到:<br><strong>hexo-theme-matery—source</strong>里、如果你的主题是next就是上传到<strong>hexo-theme-next—source</strong>里<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105134.png" alt=""><br>在git执行:<br></p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo cl &amp; hexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>等待一分钟:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105250.png" alt=""><br>这样就验证成功了<p></p>
+<h3 id="提交到必应"><a href="#提交到必应" class="headerlink" title="提交到必应"></a>提交到必应</h3><p>也是和谷歌一样的操作方式、下载文件到<strong>hexo-theme-matery—source</strong>里即可然后<br></p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo cl &amp; hexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>等一会就可以去验证了、虽然这里是xml文件但验证方式和html文件没有区别<br>记得提交网站地图<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610111500.png" alt=""><br>然后请求编制索引:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610111748.png" alt=""><p></p>
+<h3 id="站点地图申请"><a href="#站点地图申请" class="headerlink" title="站点地图申请"></a>站点地图申请</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install hexo-generator-sitemap --save
+hexo hexo cl &amp; hexo g -d
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>此时在public目录下可见sitemap.xml，即已完成站点地图的生成<sup><a href="#fn_4" id="reffn_4">4</a></sup>。<br>然后去<a target="_blank" rel="noopener" href="https://search.google.com/search-console/welcome">/search-console</a>提交即可、填入 <strong>sitemap.xml</strong>点击提交即可<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105801.png" alt=""></p>
 <blockquote id="fn_1">
 <sup>1</sup>. <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45333934/article/details/108274320">https://blog.csdn.net/weixin_45333934/article/details/108274320</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
@@ -1138,21 +1161,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
