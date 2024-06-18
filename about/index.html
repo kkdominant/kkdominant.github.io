@@ -510,7 +510,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">7</a></span>
+    <span class="count"><a href="/">8</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -524,7 +524,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">7</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -540,7 +540,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">7</a></span>
+    <span class="count"><a href="/">8</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -554,7 +554,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">7</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -698,7 +698,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,2,5],
+                data: [0,0,0,0,0,0,0,0,0,0,0,2,6],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -740,7 +740,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"hexo","value":1},{"name":"LaTeX","value":1},{"name":"微积分","value":3},{"name":"统计因果推理入门","value":1},{"name":"统计学","value":1}],
+                data: [{"name":"hexo","value":1},{"name":"统计因果推理入门","value":1},{"name":"微积分","value":3},{"name":"统计学","value":2},{"name":"LaTeX","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -764,7 +764,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["中值定理","hexo","LaTeX","不定积分"]
+                data: ["中值定理","hexo","不定积分","LaTeX","数理统计","统计学","统计推断"]
             }
         ],
         yAxis: [
@@ -777,7 +777,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [2,1,1,1],
+                data: [2,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -953,12 +953,6 @@
             
             
             
-            <a href="/tags/LaTeX/">
-                <span class="chip center-align waves-effect waves-light chip-default">LaTeX</span>
-            </a>
-            
-            
-            
             <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
                 <span class="chip center-align waves-effect waves-light chip-default">中值定理</span>
             </a>
@@ -967,6 +961,30 @@
             
             <a href="/tags/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">
                 <span class="chip center-align waves-effect waves-light chip-default">不定积分</span>
+            </a>
+            
+            
+            
+            <a href="/tags/LaTeX/">
+                <span class="chip center-align waves-effect waves-light chip-default">LaTeX</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">
+                <span class="chip center-align waves-effect waves-light chip-default">数理统计</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/">
+                <span class="chip center-align waves-effect waves-light chip-default">统计学</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD/">
+                <span class="chip center-align waves-effect waves-light chip-default">统计推断</span>
             </a>
             
             
@@ -1101,7 +1119,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">6.4k</span>
+                        class="white-color">7.5k</span>
             
             
             
@@ -1375,21 +1393,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
