@@ -516,37 +516,19 @@
                 </a>
                 
                 
+                <a href="/tags/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" title="不定积分: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="不定积分" style="background-color: #F5EEF8;">不定积分
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/hexo/" title="hexo: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="hexo" style="background-color: #F5EEF8;">hexo
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" title="数理统计: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="数理统计" style="background-color: #D5F5E3;">数理统计
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" title="统计学: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="统计学" style="background-color: #E8F8F5;">统计学
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD/" title="统计推断: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="统计推断" style="background-color: #FEF9E7;">统计推断
+                            data-tagname="hexo" style="background-color: #D5F5E3;">hexo
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -555,16 +537,34 @@
                 <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" title="中值定理: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="中值定理" style="background-color: #F8F9F9;">中值定理
+                            data-tagname="中值定理" style="background-color: #E8F8F5;">中值定理
                         <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/" title="不定积分: 1">
+                <a href="/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" title="数理统计: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="不定积分" style="background-color: #82E0AA;">不定积分
+                            data-tagname="数理统计" style="background-color: #FEF9E7;">数理统计
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" title="统计学: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="统计学" style="background-color: #F8F9F9;">统计学
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD/" title="统计推断: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="统计推断" style="background-color: #82E0AA;">统计推断
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -963,6 +963,21 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
