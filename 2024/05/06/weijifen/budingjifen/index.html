@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="中值定理1, Chuanshanak">
-    <meta name="description" content="一个中值定理题目设 $f\left( x\right)$ 在 $ \left\lbrack  {0,1} \right\rbrack   $上二阶可导,且 $f\left( 0\right)  = {f} ^{\prime } \left(">
+    <meta name="keywords" content="积分, Chuanshanak">
+    <meta name="description" content="不定积分计算下面不定积分
+\begin{align*}
+&amp; \left( 1 \right) \int{\sqrt{\frac{a-bx}{a+bx}}dx} \\
+&amp; \left( 2 \right) \int{\frac{x+\sin ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>中值定理1 | Chuanshanak</title>
+    <title>积分 | Chuanshanak</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -336,12 +339,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">中值定理1</h1>
+                    <h1 class="description center-align post-title">积分</h1>
                 </div>
             </div>
         </div>
@@ -365,8 +368,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
-                                <span class="chip bg-color">中值定理</span>
+                            <a href="/tags/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">
+                                <span class="chip bg-color">不定积分</span>
                             </a>
                         
                     </div>
@@ -390,7 +393,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-06-08
+                    2024-05-06
                 </div>
                 
 
@@ -404,14 +407,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    545
+                    784
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -434,30 +437,95 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一个中值定理题目"><a href="#一个中值定理题目" class="headerlink" title="一个中值定理题目"></a>一个中值定理题目</h3><p>设 $f\left( x\right)$ 在 $ \left\lbrack  {0,1} \right\rbrack   $上二阶可导,且 $f\left( 0\right)  = {f} ^{\prime } \left( 0\right)  = {f} ^{\prime \prime } \left( 0\right)  = f\left( 1\right)  = 0 $ ,证明存在 $ \xi  \in  (0,1)$  使得：</p>
-<script type="math/tex; mode=display">
-{\xi } ^{2} {f} ^{\prime \prime } \left( \xi \right)  - {2f} \left( \xi \right)  = 0</script><p>这题我感觉证明起来有些难度、有些步骤不容易想到、先给出答案、最后讲一下我的思路</p>
-<hr>
-<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>设$G\left( x \right) =\begin{cases}<br>    \dfrac{f\left( x \right)} {x^2} , x\in \left( 0,1 \right]\\<br>    0,      x=0\\<br>\end{cases} $ ,易验证$G(x)$ 在[0,1]上连续可导<br>当$x\ne 0$时:</p>
-<script type="math/tex; mode=display">
-    G^{\prime} \left( x \right) =\frac{f^{\prime} \left( x \right) x^2-2xf\left( x \right)} {x^4} =\frac{f^{\prime} \left( x \right) -\dfrac{2} {x} f\left( x \right)} {x^2}</script><p>$G(0)=G(1)=0$由罗尔定理可知、存在$\xi_{1} \in (0,1)$  使得 $G^{\prime} (x) =0$即：</p>
-<script type="math/tex; mode=display">
-    f^{\prime} \left( \xi _1 \right) -\frac{2} { {\xi _1}  } f\left( \xi _1 \right) =0\Rightarrow {\xi _1} ^2f^{\prime} \left( \xi _1 \right) -2\xi _1f\left( \xi _1 \right) =0</script><p>设$H\left( x \right) =x^2f^{\prime} \left( x \right) -2xf\left( x \right)$ ,则$H(\xi_1)=H(0)=0$ 则由罗尔定理知:<br>存在$\xi_2\in(0,1)$使得$ H^{\prime} (x)^ =0$即:</p>
-<script type="math/tex; mode=display">
-    {\xi _2} ^2f^{\prime\prime} \left( \xi _2 \right) -2f\left( \xi _2 \right) =0</script><p>证毕</p>
-<hr>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><script type="math/tex; mode=display">
-\begin{align*} 
-&x^2f^{''} \left( x \right) -2f\left( x \right) =0
-&\\
-&\Rightarrow x^2f^{''} \left( x \right) +2x^{\prime} f\left( x \right) -2x^{\prime} f\left( x \right) -2f\left( x \right) =0
-&\\
-&\Rightarrow \left( x^2f^{\prime} \left( x \right) \right) ^{\prime} -2\left( xf\left( x \right) \right) ^{\prime} =0
-&
-\end{align*}</script><p>设$H\left( x \right) =x^2f^{\prime} \left( x \right) -2xf\left( x \right)$ ,$H(0) =0$再找一个零点使用罗尔定理即可</p>
-<script type="math/tex; mode=display">x^2f^{\prime} \left( x \right) -2xf\left( x \right) =0\Rightarrow f^{\prime} \left( x \right) -\frac{2} {x} f\left( x \right) =0</script><p>构造$G\left( x \right) =f\left( x \right) e^{\int{-\frac{2} {x} dx}  } =\frac{f\left( x \right)} {x^2} ,G(1)=0$,但是这个$ G(x) $ 在$ 0 $ 处不连续、无法使用题目所给的条件<br>因此构造:</p>
-<script type="math/tex; mode=display">G\left( x \right) =\begin{cases} \dfrac{f\left( x \right)} {x^2} , x\in \left( 0,1 \right]\\0,      x=0\\
-\end{cases}</script><p>容易验证$G(0) =G(1)=0$且一阶连续可导、因此可以使用罗尔定理即$ G^{\prime} \left( \xi _1 \right) =0 $即$H\left( 0 \right) =H\left( \xi _1 \right) =0\Rightarrow H\left( \xi _2 \right) =0$ </p>
+                <h1 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h1><h2 id="计算下面不定积分"><a href="#计算下面不定积分" class="headerlink" title="计算下面不定积分"></a>计算下面不定积分</h2><script type="math/tex; mode=display">
+\begin{align*}
+& \left( 1 \right) \int{\sqrt{\frac{a-bx}{a+bx}}dx} \\
+& \left( 2 \right) \int{\frac{x+\sin x}{1+\cos x}dx}\\
+&\left( 3 \right) \int{\frac{\cos x+x\sin x}{\left( x+\cos x \right) ^2}dx}\\
+
+&\left( 4 \right)\ \int{\frac{x^2}{\left( x\cos x-\sin x \right) ^2}dx}\\
+& \left( 5 \right) \int{\frac{x+\sin x\cos x}{\left( \cos x-x\sin x \right) ^2}dx}\\
+& \left( 6 \right) \int{\frac{x^2}{\left( x\cos x-\sin x \right) \left( x\sin x+\cos x \right)}}dx\\
+&\left( 7 \right)\int{\left( 1+x-\frac{1}{x} \right) e^{x+\frac{1}{x}}dx}
+
+\end{align*}</script><h2 id="参考解答："><a href="#参考解答：" class="headerlink" title="参考解答："></a><strong>参考解答：</strong></h2><script type="math/tex; mode=display">
+\begin{aligned}
+&\ \left( 1 \right) :\int{\sqrt{\frac{a-bx}{a+bx}}dx} &
+\\
+&\ =:\int{\frac{a-bx}{\sqrt{a^2-b^2x^2}}dx}&
+\\
+&\ \xrightarrow{x=\frac{a}{b}\sin t}:\int{\frac{a-\mathrm{a}\sin t}{\mathrm{a}\cos t}.\frac{a}{b}\cos t}dt&
+\\
+&\ =\frac{a}{b}\left( t+\cos t \right) \,\,+C\,\,         \text{由}x=\frac{a}{b}\sin t\text{得：}t=\mathrm{arc}\sin \frac{b}{a}x\text{，}\cos t=\frac{\sqrt{a^2-b^2x^2}}{a} &
+\\
+&\ =\frac{a}{b}\mathrm{arc}\sin \frac{b}{a}x+\frac{\sqrt{a^2-b^2x^2}}{b}+C &
+\\
+&\ \text{故}\int{\sqrt{\frac{3-2x}{3+2x}}dx=\frac{3}{2}\mathrm{arc}\sin \frac{2}{3}x+\frac{\sqrt{9-4x^2}}{2}+C}&
+\\
+&\ \left( 2 \right) \int{\frac{x+\sin x}{1+\cos x}dx}&
+\\
+&\ =\int{\frac{x}{1+\cos x}dx+\int{\frac{\sin x}{1+\cos x}dx}}&
+\\
+&\ =\int{\frac{x}{2}\sec ^2\frac{x}{2}dx-\ln \left| 1+\cos x \right|}&
+\\
+&\ =x\tan \frac{x}{2}-\ln \left| 1+\cos x \right|+2\ln \left| \cos \frac{x}{2} \right|+C&
+\\
+&\ 
+\left( 3 \right) 
+
+\int{\frac{\cos x+x\sin x}{\left( x+\cos x \right) ^2}dx}&
+\\
+&\ =\int{\frac{\cos x+x}{\left( x+\cos x \right) ^2}dx}+\int{\frac{x\left( \sin x-x \right)}{\left( x+\cos x \right) ^2}dx}
+\\
+&\ =\int{\frac{1}{x+\cos x}dx}-\int{\frac{x}{\left( x+\cos x \right) ^2}d\left( \cos x+x \right)}
+\\
+&\ =\int{\frac{1}{x+\cos x}dx}+\int{xd\frac{1}{\left( \cos x+x \right)}}
+\\
+&\ =\int{\frac{1}{x+\cos x}dx}+\frac{x}{x+\cos x}-\int{\frac{1}{x+\cos x}dx}
+\\
+&\ =\frac{x}{x+\cos x}+C
+\\
+
+&\ \left( 4 \right) \because d\frac{1}{x\cos x-\sin x}=\frac{-x\sin x}{\left( x\cos x-\sin x \right) ^2}dx &
+\\
+&\ \int{\frac{x^2}{\left( x\cos x-\sin x \right) ^2}dx}
+\\
+&\ =-\int{\frac{x}{\sin x}\frac{x\sin x}{\left( x\cos x-\sin x \right) ^2}dx}
+\\
+&\ =\int{\frac{x}{\sin x}d\frac{1}{x\cos x-\sin x}}
+\\
+&\ =\frac{x}{x\sin x\cos x-\sin ^2x}-\int{\frac{1}{x\cos x-\sin x}d\frac{x}{\sin x}}
+\\
+&\ =\frac{x}{x\sin x\cos x-\sin ^2x}-\int{\frac{1}{x\cos x-\sin x}.\frac{\sin x-x\cos x}{\sin ^2x}dx}
+\\
+&\ =\frac{x}{x\sin x\cos x-\sin ^2x}-\cot x+C
+\\
+&\ \left( 5 \right) \int{\frac{x+\sin x\cos x}{\left( \cos x-x\sin x \right) ^2}dx}&\
+\\
+&\ \xrightarrow{\text{分子分母同除}\cos ^2x}\int{\frac{x\sec ^2x+\tan x}{\left( 1-x\tan x \right) ^2}dx}
+\\
+&\ =\int{\frac{1}{\left( 1-x\tan x \right) ^2}dx\tan x}
+\\
+&\ =\frac{1}{1-x\tan x}+C
+\\
+
+& \left( 6 \right) \int{\frac{x^2}{\left( x\cos x-\sin x \right) \left( x\sin x+\cos x \right)}}dx&
+\\
+&=\int{\frac{x\sin x}{\left( x\cos x-\sin x \right)}}dx+\int{\frac{x\cos x}{\left( x\sin x+\cos x \right)}}dx&
+\\
+&=\ln \left| \frac{x\sin x+\cos x}{x\cos x-\sin x} \right|+C&
+\\
+&\left( 7 \right) \because de^{x+\frac{1}{x}}=\left( 1-\frac{1}{x^2} \right) e^{x+\frac{1}{x}}dx=\frac{1}{x}\left( x-\frac{1}{x} \right) e^{x+\frac{1}{x}}dx&
+\\
+&\int{\left( 1+x-\frac{1}{x} \right) e^{x+\frac{1}{x}}dx}&
+\\
+&=\int{e^{x+\frac{1}{x}}dx}+\int{x}de^{x+\frac{1}{x}}&
+\\
+&=\int{e^{x+\frac{1}{x}}dx}+xe^{x+\frac{1}{x}}-\int{e^{x+\frac{1}{x}}dx}&
+\\
+&=xe^{x+\frac{1}{x}}+C&
+\\
+\end{aligned}</script><hr>
 
                 
             </div>
@@ -484,7 +552,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2024/06/08/%E5%BE%AE%E7%A7%AF%E5%88%86/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">http://example.com/2024/06/08/%E5%BE%AE%E7%A7%AF%E5%88%86/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/</a>
+                    <a href="http://example.com/2024/05/06/weijifen/budingjifen/">http://example.com/2024/05/06/weijifen/budingjifen/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -522,8 +590,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
-                                    <span class="chip bg-color">中值定理</span>
+                                <a href="/tags/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">
+                                    <span class="chip bg-color">不定积分</span>
                                 </a>
                             
                         </div>
@@ -606,13 +674,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/06/08/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/">
+                <a href="/2024/05/06/tongjiyinguotuilirumen/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="hexo常见问题解答">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="统计因果推理">
                         
-                        <span class="card-title">hexo常见问题解答</span>
+                        <span class="card-title">统计因果推理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -623,27 +691,19 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-05-06
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/hexo/" class="post-category">
-                                    hexo
+                            <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8/" class="post-category">
+                                    统计因果推理入门
                                 </a>
                             
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -652,16 +712,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2024/06/07/LaTeX%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                <a href="/2024/05/06/weijifen/budingjifen/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="LaTeX 问题合集">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="积分">
                         
-                        <span class="card-title">LaTeX 问题合集</span>
+                        <span class="card-title">积分</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -672,25 +732,26 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/LaTeX/" class="post-category">
-                                    LaTeX
+                            <a href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/" class="post-category">
+                                    微积分
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/LaTeX/">
-                        <span class="chip bg-color">LaTeX</span>
+                    <a href="/tags/%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86/">
+                        <span class="chip bg-color">不定积分</span>
                     </a>
                     
                 </div>
