@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo常见问题解答, Chuanshanak">
-    <meta name="description" content="hexo的Matery主题代码块显示问题你的代码块是否显示为这样?
-
-尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果代码链接highlight:                      # 代码块的设置
-  enable:">
+    <meta name="keywords" content="随机向量, Chuanshanak">
+    <meta name="description" content="随机向量均值向量与协方差阵一些结论随机向量的期望和协方差矩阵设 $n$ 维随机向量 $\mathbf{X} = \left( {X}_{1},{X}_{2},\cdots {X}_{n} \right)^{\prime}$，若其每个分量的数">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo常见问题解答 | Chuanshanak</title>
+    <title>随机向量 | Chuanshanak</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -339,12 +336,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo常见问题解答</h1>
+                    <h1 class="description center-align post-title">随机向量</h1>
                 </div>
             </div>
         </div>
@@ -366,13 +363,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -380,8 +373,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo/" class="post-category">
-                                hexo
+                            <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" class="post-category">
+                                统计学
                             </a>
                         
                     </div>
@@ -393,7 +386,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-06-08
+                    2024-06-06
                 </div>
                 
 
@@ -402,14 +395,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    638
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    6 分
                 </div>
                 
 
@@ -432,59 +425,72 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="hexo的Matery主题代码块显示问题"><a href="#hexo的Matery主题代码块显示问题" class="headerlink" title="hexo的Matery主题代码块显示问题"></a>hexo的Matery主题代码块显示问题</h2><p>你的代码块是否显示为这样?</p>
-<p><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221035.png" alt=""></p>
-<p>尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果<a target="_blank" rel="noopener" href="https://www.cnblogs.com/jijunhao/p/16972921.html">代码链接</a><br></p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">highlight</span><span class="token punctuation">:</span>                      <span class="token comment"># 代码块的设置</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment"># 开启代码块高亮</span>
-  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>             <span class="token comment"># 显示行数</span>
-  <span class="token key atrule">auto_detect</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>            <span class="token comment"># 如果未指定语言，则启用自动检测</span>
-  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>               <span class="token comment"># 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs</span>
-  <span class="token key atrule">wrap</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">hljs</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
-<span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>有没有发现<code>highlight:</code>上面还有一行？<p></p>
-<p><code>syntax_highlighter: highlight.js</code></p>
-<p>我们需要修改这一行、将<code>highlight.js</code>改为<code>prismjs</code>才行</p>
-<blockquote>
-<p>只需要做如下修改即可、因为我们的primjs应该都是v7.0.0及以上：<br></p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># _config.yml</span>
-<span class="token key atrule">syntax_highlighter</span><span class="token punctuation">:</span> prismjs
-<span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
-  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">line_threshold</span><span class="token punctuation">:</span> <span class="token number">0</span>
-  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221627.png" alt=""><p></p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/syntax-highlight#preprocess">官网对这个问题的说明</a></p>
-<p>然后就显示正常了<br><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221811.png" alt=""></p>
-<h2 id="Nunjucks-Errorexpected-variable-end"><a href="#Nunjucks-Errorexpected-variable-end" class="headerlink" title="Nunjucks Errorexpected variable end"></a>Nunjucks Errorexpected variable end</h2><p>在数学公式中遇到这个问题<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
-<p><strong>ctrl+f</strong> 打开搜索<br></p><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">{{ 替换为   { {即中间加上空格
-
-}}替换为} }即中间加上空格<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45333934/article/details/108274320">Nunjucks Error: 解决方案</a></p>
-<h2 id="设置valine评论时显示qq头像"><a href="#设置valine评论时显示qq头像" class="headerlink" title="设置valine评论时显示qq头像"></a>设置valine评论时显示qq头像</h2><p>找了好久也没有搜到、最后我在这篇文章里找到了<sup><a href="#fn_2" id="reffn_2">2</a></sup> <a target="_blank" rel="noopener" href="https://wallleap.gitbook.io/blog/ji-shu-za-tan/valine-ping-lun-xi-tong-shi-yong-jiao-cheng">valine 评论系统使用教程</a>我看matery主题里也没有enableQQ这一项<br>解决方法:<br>在hexo-theme-matery —— layout—-partial—-valine.ejs文件里(或者直接Ctrl+P搜索valine.ejs)在大概251行的位置加上<br></p><pre class="line-numbers language-none"><code class="language-none">enableQQ: true,<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>就可以了、注意后面的逗号<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240609220546.png" alt=""><p></p>
-<h2 id="将网站提交到谷歌搜索-hexo-theme-matery主题"><a href="#将网站提交到谷歌搜索-hexo-theme-matery主题" class="headerlink" title="将网站提交到谷歌搜索(hexo-theme-matery主题)"></a>将网站提交到谷歌搜索(hexo-theme-matery主题)</h2><p>进入网站<a target="_blank" rel="noopener" href="https://search.google.com/search-console/welcome">/search-console</a><br>填写的自己的网站地址<sup><a href="#fn_3" id="reffn_3">3</a></sup>:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610104814.png" alt=""><br>选择推荐验证方式、下载html文件到:<br><strong>hexo-theme-matery—source</strong>里、如果你的主题是next就是上传到<strong>hexo-theme-next—source</strong>里<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105134.png" alt=""><br>在git执行:<br></p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo cl &amp; hexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>等待一分钟:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105250.png" alt=""><br>这样就验证成功了<p></p>
-<h3 id="提交到必应"><a href="#提交到必应" class="headerlink" title="提交到必应"></a>提交到必应</h3><p>也是和谷歌一样的操作方式、下载文件到<strong>hexo-theme-matery—source</strong>里即可然后<br></p><pre class="line-numbers language-git" data-language="git"><code class="language-git">hexo cl &amp; hexo g -d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>等一会就可以去验证了、虽然这里是xml文件但验证方式和html文件没有区别<br>记得提交网站地图<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610111500.png" alt=""><br>然后请求编制索引:<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610111748.png" alt=""><p></p>
-<h3 id="站点地图申请"><a href="#站点地图申请" class="headerlink" title="站点地图申请"></a>站点地图申请</h3><pre class="line-numbers language-git" data-language="git"><code class="language-git">npm install hexo-generator-sitemap --save
-hexo hexo cl &amp; hexo g -d
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>此时在public目录下可见sitemap.xml，即已完成站点地图的生成<sup><a href="#fn_4" id="reffn_4">4</a></sup>。<br>然后去<a target="_blank" rel="noopener" href="https://search.google.com/search-console/welcome">/search-console</a>提交即可、填入 <strong>sitemap.xml</strong>点击提交即可<br><img src="https://typoracsdnzhihu.oss-cn-nanjing.aliyuncs.com/20240610105801.png" alt=""></p>
-<blockquote id="fn_1">
-<sup>1</sup>. <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45333934/article/details/108274320">https://blog.csdn.net/weixin_45333934/article/details/108274320</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
-</blockquote>
-<blockquote id="fn_2">
-<sup>2</sup>. <a target="_blank" rel="noopener" href="https://wallleap.gitbook.io/blog/ji-shu-za-tan/valine-ping-lun-xi-tong-shi-yong-jiao-cheng、">https://wallleap.gitbook.io/blog/ji-shu-za-tan/valine-ping-lun-xi-tong-shi-yong-jiao-cheng、</a><a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
-</blockquote>
-<blockquote id="fn_3">
-<sup>3</sup>. <a target="_blank" rel="noopener" href="https://blog.csdn.net/CoolBoySilverBullet/article/details/121802701">https://blog.csdn.net/CoolBoySilverBullet/article/details/121802701</a><a href="#reffn_3" title="Jump back to footnote [3] in the text."> ↩</a>
-</blockquote>
-<blockquote id="fn_4">
-<sup>4</sup>. <a target="_blank" rel="noopener" href="https://mizeri.github.io/2021/04/18/hexo-sitemap-google/">https://mizeri.github.io/2021/04/18/hexo-sitemap-google/</a><a href="#reffn_4" title="Jump back to footnote [4] in the text."> ↩</a>
-</blockquote>
-
+                <h1 id="随机向量"><a href="#随机向量" class="headerlink" title="随机向量"></a>随机向量</h1><h2 id="均值向量与协方差阵"><a href="#均值向量与协方差阵" class="headerlink" title="均值向量与协方差阵"></a>均值向量与协方差阵</h2><h3 id="一些结论"><a href="#一些结论" class="headerlink" title="一些结论"></a>一些结论</h3><h4 id="随机向量的期望和协方差矩阵"><a href="#随机向量的期望和协方差矩阵" class="headerlink" title="随机向量的期望和协方差矩阵"></a>随机向量的期望和协方差矩阵</h4><p>设 $n$ 维随机向量 $\mathbf{X} = \left( {X}_{1},{X}_{2},\cdots {X}_{n} \right)^{\prime}$，若其每个分量的数学期望都存在，则称：</p>
+<p>$E\left( \mathbf{X} \right) = \left( {E\left( {X}_{1} \right), E\left( {X}_{2} \right), \cdots, E\left( {X}_{n} \right) } \right)^{\prime}$ 为 $n$ 维随机变量 $\mathbf{X}$ 的数学期望向量。</p>
+<p>$n$维随机向量 $X$ 的协方差矩阵定义为:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+  \mathrm{Cov}\left( \mathbf{X} \right) &= E\left( \left( \mathbf{X} - E\left( \mathbf{X} \right) \right) \left( \mathbf{X} - E\left( \mathbf{X} \right) \right)^T \right) \\
+  &= \left[ \begin{matrix}
+    \mathrm{Var}\left( X_1 \right) & \mathrm{Cov}\left( X_1, X_2 \right) & \cdots & \mathrm{Cov}\left( X_1, X_n \right) \\
+    \mathrm{Cov}\left( X_2, X_1 \right) & \mathrm{Var}\left( X_2 \right) & \cdots & \mathrm{Cov}\left( X_2, X_n \right) \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \mathrm{Cov}\left( X_n, X_1 \right) & \mathrm{Cov}\left( X_n, X_2 \right) & \cdots & \mathrm{Var}\left( X_n \right) \\
+  \end{matrix} \right]
+\end{align*}</script><h4 id="定理：-E-left-Y-right"><a href="#定理：-E-left-Y-right" class="headerlink" title="定理：$E\left( Y \right)$"></a>定理：$E\left( Y \right)$</h4><p>设 $A$ 为 $m \times n$ 非随机矩阵，$X$ 和 $b$ 分别为 $n \times 1$ 和 $m \times 1$ 随机向量，记 $Y = AX + b$，则</p>
+<script type="math/tex; mode=display">
+E\left( Y \right) = AE\left( X \right) + E\left( b \right).</script><h4 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h4><p>$\operatorname{tr}(\operatorname{Cov}\left( X \right)) = \sum_{i=1}^{n}\operatorname{Var}\left( X_i \right)$，这里 $\operatorname{tr}A$ 表示方阵 $A$ 的迹，即对角元素之和。</p>
+<h4 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h4><p>设 $X$ 为 $n \times 1$ 随机向量，则它的协方差阵必为半正定的对称阵。</p>
+<h4 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h4><p>设 $A$ 为 $m \times n$ 阵，$X$ 为 $n \times 1$ 随机向量，$Y = AX$，则 $\operatorname{Cov}\left( Y \right) = A \operatorname{Cov}\left( X \right) A^{\prime}$。</p>
+<h4 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h4><p>设 $X$ 和 $Y$ 分别为 $n \times 1, m \times 1$ 随机向量，$A$ 和 $B$ 分别为 $p \times n, q \times m$ 非随机矩阵，则</p>
+<script type="math/tex; mode=display">
+\operatorname{Cov}\left( AX, BY \right) = A \operatorname{Cov}\left( X, Y \right) B^{\prime}.</script><h2 id="随机向量的二次型"><a href="#随机向量的二次型" class="headerlink" title="随机向量的二次型"></a>随机向量的二次型</h2><h4 id="定理：-E-left-X-prime-AX-right"><a href="#定理：-E-left-X-prime-AX-right" class="headerlink" title="定理：$E\left( X^{\prime}AX \right)$"></a>定理：$E\left( X^{\prime}AX \right)$</h4><p>设 $E\left( X \right) = \mu, \operatorname{Cov}\left( X \right) = \Sigma$​，则</p>
+<script type="math/tex; mode=display">
+E\left( X^{\prime}AX \right) = \mu^{\prime}A\mu + \operatorname{tr}\left( A\Sigma \right).\tag{1}\label{期望}</script><p>注: 证明用到结论 $\mathrm{tr}\left( E\left( A \right) \right) = E\left( \mathrm{tr}\left( A \right) \right)$</p>
+<h4 id="推论-1"><a href="#推论-1" class="headerlink" title="推论"></a>推论</h4><p>设 $E\left( X \right) = \mu, \operatorname{Cov}\left( X \right) = \Sigma$，则</p>
+<script type="math/tex; mode=display">
+E\left( X^{\prime}AX \right) = \mu^{\prime}A\mu + \operatorname{tr}\left( A\Sigma \right).</script><ul>
+<li>若 $\mu = 0$ 则 $E\left( X^{\prime}AX \right) = \operatorname{tr}\left( A\Sigma \right)$。</li>
+<li>若 $\Sigma = \sigma^2 I$，则 $E\left( X^{\prime}AX \right) = \mu^{\prime}A\mu + \sigma^2 \operatorname{tr}\left( A \right)$。</li>
+<li>若 $\mu = 0, \Sigma = I$，则 $E\left( X^{\prime}AX \right) = \operatorname{tr}\left( A \right)$。</li>
+</ul>
+<hr>
+<h2 id="样本方差是总体方差的无偏估计"><a href="#样本方差是总体方差的无偏估计" class="headerlink" title="样本方差是总体方差的无偏估计"></a>样本方差是总体方差的无偏估计</h2><h3 id="例题-1"><a href="#例题-1" class="headerlink" title="例题 1"></a>例题 1</h3><p>假设一维总体的均值为 $\mu$，方差为 $\sigma^2$。$X_1, \cdots, X_n$ 为从此总体中抽取的随机样本，试求样本方差</p>
+<script type="math/tex; mode=display">
+{S}^{2} = \frac{1}{n - 1}\sum_{i=1}^{n}{\left( X_i - \bar{X} \right) }^{2}</script><p>的均值，这里 $\bar{X} = \frac{1}{n}\sum_{i=1}^{n} X_i$。</p>
+<hr>
+<p>常规解法:</p>
+<p>令 $Y_i = X_i - \mu$，则 $\bar{Y} = \bar{X} - \mu$。</p>
+<p>易得：</p>
+<p>$Y_i, Y_j \left( i \ne j \right)$ 相互独立，$\left( X_i - \bar{X} \right)^2 = \left( Y_i - \bar{Y} \right)^2$</p>
+<p>$E\left( Y_i \right) = 0, E\left( Y_i^2 \right) = D\left( Y_i \right) + E^2\left( Y_i \right) = \sigma^2$</p>
+<p>因此 $E\left( \bar{Y}^2 \right) = \frac{1}{n^2} E\left( \sum_{i=1}^n Y_i^2 + 2 \sum_{i \ne j}^n Y_i Y_j \right) = \frac{\sigma^2}{n}$</p>
+<p>故 $E\left( Y_i - \bar{Y} \right)^2 = E\left( Y_i^2 - 2 Y_i \bar{Y} + \bar{Y}^2 \right) = \sigma^2 - \frac{2}{n} E\left( Y_i^2 + \sum_{j \ne i} Y_i Y_j \right) + \frac{\sigma^2}{n} = \frac{n-1}{n} \sigma^2$</p>
+<p>再由期望的线性可加性可得 $E \left( S^2 \right) = \frac{n}{n-1} \frac{n-1}{n} \sigma^2 = \sigma^2$。</p>
+<hr>
+<p>记 $\mathbf{X} = \left( X_1, X_2, \cdots, X_n \right)^{\prime}$，$E_n$ 为 $n$ 阶单位矩阵，$I_n$ 为元素全为 1 的 $n$ 阶矩阵，</p>
+<p>$\mathbf{\bar{X}} = \left( \bar{X}, \bar{X}, \cdots, \bar{X} \right)^{\prime} = \frac{1}{n} I_n \mathbf{X}$</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+  &\sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \\
+  &= \left( \boldsymbol{X} - \bar{\boldsymbol{X}} \right)^{\prime} \left( \boldsymbol{X} - \bar{\boldsymbol{X}} \right) \\
+  &= \left( \boldsymbol{E}_{\boldsymbol{n}} \boldsymbol{X} - \frac{1}{n} I_n \boldsymbol{X} \right)^{\prime} \left( \boldsymbol{E}_{\boldsymbol{n}} \boldsymbol{X} - \frac{1}{n} I_n \boldsymbol{X} \right) \\
+  &= \boldsymbol{X}^{\prime} \boldsymbol{C}^{\prime} \boldsymbol{C} \boldsymbol{X} \\
+  &= \boldsymbol{X}^{\prime} \boldsymbol{C} \boldsymbol{X}
+\end{align*}</script><p>记 $\boldsymbol{C} = \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n$，并且注意到 $\boldsymbol{C} = \boldsymbol{C}^{\prime} = \boldsymbol{C}^2 ${幂等矩阵}</p>
+<p>应用公式$\ref{期望} $可得，$E(\boldsymbol{X}^{\prime}\boldsymbol{CX})=\mathbf{\mu}’\boldsymbol{C}\mathbf{\mu} + \mathrm{tr}(C\Sigma)$</p>
+<p>注意到</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+  \boldsymbol{\mu }^{\prime} \boldsymbol{C} \boldsymbol{\mu } &= \mu \left( 1, 1, \cdots 1 \right) \left( \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n \right) \left( 1, 1, \cdots 1 \right)^{\prime} \mu \\
+  &= \mu^2 \left( 1, 1, \cdots 1 \right) \left( \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n \right) \left( 1, 1, \cdots 1 \right)^{\prime}
+\end{align*}</script><p>又因为 $\left( \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n \right) \left( 1, 1, \cdots 1 \right)^{\prime} = 0$，故 $\boldsymbol{\mu }^{\prime} \boldsymbol{C} \boldsymbol{\mu } = 0$</p>
+<p>由于 $X_i, X_j$ 相互独立、方差为 $\sigma^2$ 故 $\Sigma = \sigma^2 E_n$，易得 $\mathrm{tr}(C) = n - 1$</p>
+<p>故</p>
+<script type="math/tex; mode=display">
+\mathrm{tr} \left( C \Sigma \right) = \sigma^2 \mathrm{tr} \left( C \right) = \left( n - 1 \right) \sigma^2</script><p>综上可得:</p>
+<script type="math/tex; mode=display">
+E \left( \frac{1}{n-1} \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right) = E \left( \frac{1}{n-1} \boldsymbol{X}^{\prime} \boldsymbol{C} \boldsymbol{X} \right) = \sigma^2</script>
                 
             </div>
             <hr/>
@@ -510,7 +516,7 @@ hexo hexo cl &amp; hexo g -d
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2024/06/08/hexochangjianwentijieda/">http://example.com/2024/06/08/hexochangjianwentijieda/</a>
+                    <a href="http://example.com/2024/06/06/%E9%9A%8F%E6%9C%BA%E5%90%91%E9%87%8F/">http://example.com/2024/06/06/%E9%9A%8F%E6%9C%BA%E5%90%91%E9%87%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,11 +553,7 @@ hexo hexo cl &amp; hexo g -d
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -632,13 +634,13 @@ hexo hexo cl &amp; hexo g -d
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/06/09/weijifen/zhongzhidingli2he3/">
+                <a href="/2024/06/07/LaTeX%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="中值定理2&amp;3">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="LaTeX 问题合集">
                         
-                        <span class="card-title">中值定理2&amp;3</span>
+                        <span class="card-title">LaTeX 问题合集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -649,14 +651,14 @@ hexo hexo cl &amp; hexo g -d
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-09
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-07
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/" class="post-category">
-                                    微积分
+                            <a href="/categories/LaTeX/" class="post-category">
+                                    LaTeX
                                 </a>
                             
                             
@@ -666,8 +668,8 @@ hexo hexo cl &amp; hexo g -d
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
-                        <span class="chip bg-color">中值定理</span>
+                    <a href="/tags/LaTeX/">
+                        <span class="chip bg-color">LaTeX</span>
                     </a>
                     
                 </div>
@@ -681,13 +683,13 @@ hexo hexo cl &amp; hexo g -d
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/06/08/weijifen/zhongzhidingli/">
+                <a href="/2024/05/06/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="中值定理1">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="统计因果推理">
                         
-                        <span class="card-title">中值定理1</span>
+                        <span class="card-title">统计因果推理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -698,27 +700,19 @@ hexo hexo cl &amp; hexo g -d
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/" class="post-category">
-                                    微积分
+                            <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8/" class="post-category">
+                                    统计因果推理入门
                                 </a>
                             
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
-                        <span class="chip bg-color">中值定理</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -877,6 +871,13 @@ hexo hexo cl &amp; hexo g -d
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 

@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="中值定理1, Chuanshanak">
-    <meta name="description" content="一个中值定理题目设 $f\left( x\right)$ 在 $ \left\lbrack  {0,1} \right\rbrack   $上二阶可导,且 $f\left( 0\right)  = {f} ^{\prime } \left(">
+    <meta name="keywords" content="中值定理2&amp;3, Chuanshanak">
+    <meta name="description" content="其中第二个中值定理有些难度、第一个是很经典的题目。
+
+设$f\left( x\right)$ 在$\left\lbrack{0,1}\right\rbrack$上连续,在$\left({0,1}\right)$内可导,且$f\left( 0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>中值定理1 | Chuanshanak</title>
+    <title>中值定理2&amp;3 | Chuanshanak</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -336,12 +338,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">中值定理1</h1>
+                    <h1 class="description center-align post-title">中值定理2&amp;3</h1>
                 </div>
             </div>
         </div>
@@ -390,7 +392,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-06-08
+                    2024-06-09
                 </div>
                 
 
@@ -399,14 +401,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    545
+                    827
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -429,30 +431,39 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一个中值定理题目"><a href="#一个中值定理题目" class="headerlink" title="一个中值定理题目"></a>一个中值定理题目</h3><p>设 $f\left( x\right)$ 在 $ \left\lbrack  {0,1} \right\rbrack   $上二阶可导,且 $f\left( 0\right)  = {f} ^{\prime } \left( 0\right)  = {f} ^{\prime \prime } \left( 0\right)  = f\left( 1\right)  = 0 $ ,证明存在 $ \xi  \in  (0,1)$  使得：</p>
+                <p><strong>其中第二个中值定理有些难度、第一个是很经典的题目。</strong></p>
+<ol>
+<li>设$f\left( x\right)$ 在$\left\lbrack{0,1}\right\rbrack$上连续,在$\left({0,1}\right)$内可导,且$f\left( 0\right)  = 0,f\left( 1\right)  = 1$,试证对任意 正数${a}_{1},{a}_{2},\cdots ,{a}_{n}$,在$\left( {0,1}\right)$内一定存在互不相同的$n$个数,$0 &lt; {\xi }_{1} &lt; {\xi }_{2} &lt; \cdots &lt; {\xi }_{n} &lt; 1$使得:</li>
+</ol>
+<script type="math/tex; mode=display">\frac{ {a}_{1} }{ {f}^{\prime }\left( {\xi }_{1}\right) } + \frac{ {a}_{2} }{ {f}^{\prime }\left( {\xi }_{2}\right) } + \cdots  + \frac{ {a}_{n} }{ {f}^{\prime }\left( {\xi }_{n}\right) } = {a}_{1} + {a}_{2} + \cdots  + {a}_{n}.</script><ol>
+<li>设$f\left( x\right)$在$\left\lbrack  {0,a}\right\rbrack$上可导$\left( {a &gt; 0}\right) ,f\left( 0\right)  = 1,f\left( a\right)  = 0$,证明; 在$\left( {0,a}\right)$上存在${x}_{1} &lt; {x}_{2}$使得；</li>
+</ol>
 <script type="math/tex; mode=display">
-{\xi } ^{2} {f} ^{\prime \prime } \left( \xi \right)  - {2f} \left( \xi \right)  = 0</script><p>这题我感觉证明起来有些难度、有些步骤不容易想到、先给出答案、最后讲一下我的思路</p>
-<hr>
-<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>设$G\left( x \right) =\begin{cases}<br>    \dfrac{f\left( x \right)} {x^2} , x\in \left( 0,1 \right]\\<br>    0,      x=0\\<br>\end{cases} $ ,易验证$G(x)$ 在[0,1]上连续可导<br>当$x\ne 0$时:</p>
+{f}^{\prime }\left( {x}_{1}\right) {f}^{\prime }\left( {x}_{2}\right)  = \frac{1}{ {a}^{2} }</script><hr>
+<blockquote>
+<p>note：这两题实际上都是用的介值定理+Lagrange中值定理来证明的</p>
+</blockquote>
+<p><strong>proof</strong></p>
+<h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><script type="math/tex; mode=display">\frac{ {a}_{1} }{ {f}^{\prime }\left( {\xi }_{1}\right) } + \frac{ {a}_{2} }{ {f}^{\prime }\left( {\xi }_{2}\right) } + \cdots  + \frac{ {a}_{n} }{ {f}^{\prime }\left( {\xi }_{n}\right) } = {a}_{1} + {a}_{2} + \cdots  + {a}_{n}.</script><p>等价于证明</p>
 <script type="math/tex; mode=display">
-    G^{\prime} \left( x \right) =\frac{f^{\prime} \left( x \right) x^2-2xf\left( x \right)} {x^4} =\frac{f^{\prime} \left( x \right) -\dfrac{2} {x} f\left( x \right)} {x^2}</script><p>$G(0)=G(1)=0$由罗尔定理可知、存在$\xi_{1} \in (0,1)$  使得 $G^{\prime} (x) =0$即：</p>
+    \frac{a_1}{\left( a_1+a_2+\cdots +a_n \right) f^{\prime}\left( \xi _1 \right)}+\frac{a_2}{\left( a_1+a_2+\cdots +a_n \right) f^{\prime}\left( \xi _2 \right)}+\cdots +\frac{a_n}{\left( a_1+a_2+\cdots +a_n \right) f^{\prime}\left( \xi _n \right)}=1</script><p>即</p>
 <script type="math/tex; mode=display">
-    f^{\prime} \left( \xi _1 \right) -\frac{2} { {\xi _1}  } f\left( \xi _1 \right) =0\Rightarrow {\xi _1} ^2f^{\prime} \left( \xi _1 \right) -2\xi _1f\left( \xi _1 \right) =0</script><p>设$H\left( x \right) =x^2f^{\prime} \left( x \right) -2xf\left( x \right)$ ,则$H(\xi_1)=H(0)=0$ 则由罗尔定理知:<br>存在$\xi_2\in(0,1)$使得$ H^{\prime} (x)^ =0$即:</p>
+   \sum_{i=1}^n{\frac{a_i}{f^{\prime}\left( \xi _i \right) \sum_{i=1}^n{a_i} }}=1</script><p>由$f\left( x\right)$在$\left\lbrack  {0,1}\right\rbrack$上连续,在$\left( {0,1}\right)$内可导,且$f\left( 0\right)  = 0,f\left( 1\right)  = 1$可由介值定理知:<br>存在$f(x_1)=\dfrac{a_1}{\left( a_1+a_2+\cdots +a_n \right)},<br>f(x_2)=\dfrac{a_1+a_2}{\left( a_1+a_2+\cdots +a_n \right)},\ldots, f(x_n)=1$即$f(x_i)=\dfrac{\sum_1^n a_i}{\left( a_1+a_2+\cdots +a_n \right)}$(注意这里这两个端点值$x_n=1,x_0=0$)<br>则由Lagrange中值定理知:<br>存在$\xi_i \in (x_{i-1},x_i)$，使得:</p>
 <script type="math/tex; mode=display">
-    {\xi _2} ^2f^{\prime\prime} \left( \xi _2 \right) -2f\left( \xi _2 \right) =0</script><p>证毕</p>
-<hr>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><script type="math/tex; mode=display">
-\begin{align*} 
-&x^2f^{''} \left( x \right) -2f\left( x \right) =0
-&\\
-&\Rightarrow x^2f^{''} \left( x \right) +2x^{\prime} f\left( x \right) -2x^{\prime} f\left( x \right) -2f\left( x \right) =0
-&\\
-&\Rightarrow \left( x^2f^{\prime} \left( x \right) \right) ^{\prime} -2\left( xf\left( x \right) \right) ^{\prime} =0
-&
-\end{align*}</script><p>设$H\left( x \right) =x^2f^{\prime} \left( x \right) -2xf\left( x \right)$ ,$H(0) =0$再找一个零点使用罗尔定理即可</p>
-<script type="math/tex; mode=display">x^2f^{\prime} \left( x \right) -2xf\left( x \right) =0\Rightarrow f^{\prime} \left( x \right) -\frac{2} {x} f\left( x \right) =0</script><p>构造$G\left( x \right) =f\left( x \right) e^{\int{-\frac{2} {x} dx}  } =\frac{f\left( x \right)} {x^2} ,G(1)=0$,但是这个$ G(x) $ 在$ 0 $ 处不连续、无法使用题目所给的条件<br>因此构造:</p>
-<script type="math/tex; mode=display">G\left( x \right) =\begin{cases} \dfrac{f\left( x \right)} {x^2} , x\in \left( 0,1 \right]\\0,      x=0\\
-\end{cases}</script><p>容易验证$G(0) =G(1)=0$且一阶连续可导、因此可以使用罗尔定理即$ G^{\prime} \left( \xi _1 \right) =0 $即$H\left( 0 \right) =H\left( \xi _1 \right) =0\Rightarrow H\left( \xi _2 \right) =0$ </p>
+    f^{\prime}\left( \xi _i \right) =\frac{f\left( x_i \right) -f\left( x_{i-1} \right)}{x_i-x_{i-1} }=\frac{a_i}{\left( x_i-x_{i-1} \right) \left( a_1+a_2+\cdots +a_n \right)}</script><p>显然有$0 &lt; {\xi }_{1} &lt; {\xi }_{2} &lt; \cdots  &lt; {\xi }_{n} &lt;1$,于是:</p>
+<script type="math/tex; mode=display">
+    \frac{a_i}{f^{\prime}\left( \xi _i \right) \sum_{i=1}^n{a_i} }=x_i-x_{i-1}</script><p>故</p>
+<script type="math/tex; mode=display">
+    \sum_{i=1}^n{\frac{a_i}{f^{\prime}\left( \xi _i \right) \sum_{i=1}^n{a_i} }}=\sum_{i=1}^n{\left( x_i-x_{i-1} \right)}=x_n-x_0=1</script><hr>
+<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3><p>这一题有些难度、中介点不好找。</p>
+<p>$f\left( x\right)$在$\left\lbrack  {0,a}\right\rbrack$上可导$\left( {a &gt; 0}\right) ,f\left( 0\right)  = 1,f\left( a\right)  = 0$,令$g(x)=f(x)-\dfrac{x}{a}$,则$g(0)&gt;0,g(a)&lt;0$,则由介值定理知存在点$c \in(0,a)$使得,$g(c)=f(c)-\dfrac{c}{a} =0$,在$(0,\dfrac{c}{a}),(\dfrac{c}{a},1)$上分别运用Lagrange中值定理可得:</p>
+<script type="math/tex; mode=display">
+    f^{\prime}\left( \xi _1 \right) =\frac{f\left( c \right) -f\left( 0 \right)}{c}=\frac{c-a}{ac}
+\\
+f^{\prime}\left( \xi _2 \right) =\frac{f\left( a \right) -f\left( c \right)}{a-c}=\frac{-c}{a\left( a-c \right)}</script><p>因此:</p>
+<script type="math/tex; mode=display">
+    f^{\prime}\left( \xi _1 \right) f^{\prime}\left( \xi _2 \right) =\frac{c-a}{ac}\frac{-c}{a\left( a-c \right)}=\frac{1}{a^2}</script><hr>
+<p>可以看出可以关键一步就是构造辅助函数$g(x)=f(x)-\dfrac{x}{a}$，这是怎么想到的呢?就是先随便试一个点c、然后分别运用Lagrange中值定理、看看什么时候成立，然后就是找到特殊点</p>
 
                 
             </div>
@@ -479,7 +490,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2024/06/08/weijifen/zhongzhidingli/">http://example.com/2024/06/08/weijifen/zhongzhidingli/</a>
+                    <a href="http://example.com/2024/06/09/%E5%BE%AE%E7%A7%AF%E5%88%86/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%862%E5%92%8C3/">http://example.com/2024/06/09/%E5%BE%AE%E7%A7%AF%E5%88%86/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%862%E5%92%8C3/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -597,11 +608,62 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/06/08/hexochangjianwentijieda/">
+                <a href="/2024/06/09/%E5%BE%AE%E7%A7%AF%E5%88%86/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%862%E5%92%8C3/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="中值定理2&amp;3">
+                        
+                        <span class="card-title">中值定理2&amp;3</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/" class="post-category">
+                                    微积分
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
+                        <span class="chip bg-color">中值定理</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/06/08/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/">
                     <div class="card-image">
                         
                         
@@ -617,9 +679,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -637,55 +699,6 @@
                     
                     <a href="/tags/hexo/">
                         <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/06/07/latexxuexibiji/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="LaTeX 问题合集">
-                        
-                        <span class="card-title">LaTeX 问题合集</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-07
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/LaTeX/" class="post-category">
-                                    LaTeX
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/LaTeX/">
-                        <span class="chip bg-color">LaTeX</span>
                     </a>
                     
                 </div>

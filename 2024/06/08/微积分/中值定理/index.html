@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="随机向量, Chuanshanak">
-    <meta name="description" content="随机向量均值向量与协方差阵一些结论随机向量的期望和协方差矩阵设 $n$ 维随机向量 $\mathbf{X} = \left( {X}_{1},{X}_{2},\cdots {X}_{n} \right)^{\prime}$，若其每个分量的数">
+    <meta name="keywords" content="中值定理1, Chuanshanak">
+    <meta name="description" content="一个中值定理题目设 $f\left( x\right)$ 在 $ \left\lbrack  {0,1} \right\rbrack   $上二阶可导,且 $f\left( 0\right)  = {f} ^{\prime } \left(">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>随机向量 | Chuanshanak</title>
+    <title>中值定理1 | Chuanshanak</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -336,12 +336,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">随机向量</h1>
+                    <h1 class="description center-align post-title">中值定理1</h1>
                 </div>
             </div>
         </div>
@@ -363,9 +363,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
+                                <span class="chip bg-color">中值定理</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -373,8 +377,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/" class="post-category">
-                                统计学
+                            <a href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/" class="post-category">
+                                微积分
                             </a>
                         
                     </div>
@@ -386,7 +390,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-06-06
+                    2024-06-08
                 </div>
                 
 
@@ -395,14 +399,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    545
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    2 分
                 </div>
                 
 
@@ -425,72 +429,31 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="随机向量"><a href="#随机向量" class="headerlink" title="随机向量"></a>随机向量</h1><h2 id="均值向量与协方差阵"><a href="#均值向量与协方差阵" class="headerlink" title="均值向量与协方差阵"></a>均值向量与协方差阵</h2><h3 id="一些结论"><a href="#一些结论" class="headerlink" title="一些结论"></a>一些结论</h3><h4 id="随机向量的期望和协方差矩阵"><a href="#随机向量的期望和协方差矩阵" class="headerlink" title="随机向量的期望和协方差矩阵"></a>随机向量的期望和协方差矩阵</h4><p>设 $n$ 维随机向量 $\mathbf{X} = \left( {X}_{1},{X}_{2},\cdots {X}_{n} \right)^{\prime}$，若其每个分量的数学期望都存在，则称：</p>
-<p>$E\left( \mathbf{X} \right) = \left( {E\left( {X}_{1} \right), E\left( {X}_{2} \right), \cdots, E\left( {X}_{n} \right) } \right)^{\prime}$ 为 $n$ 维随机变量 $\mathbf{X}$ 的数学期望向量。</p>
-<p>$n$维随机向量 $X$ 的协方差矩阵定义为:</p>
+                <h3 id="一个中值定理题目"><a href="#一个中值定理题目" class="headerlink" title="一个中值定理题目"></a>一个中值定理题目</h3><p>设 $f\left( x\right)$ 在 $ \left\lbrack  {0,1} \right\rbrack   $上二阶可导,且 $f\left( 0\right)  = {f} ^{\prime } \left( 0\right)  = {f} ^{\prime \prime } \left( 0\right)  = f\left( 1\right)  = 0 $ ,证明存在 $ \xi  \in  (0,1)$  使得：</p>
 <script type="math/tex; mode=display">
-\begin{align*}
-  \mathrm{Cov}\left( \mathbf{X} \right) &= E\left( \left( \mathbf{X} - E\left( \mathbf{X} \right) \right) \left( \mathbf{X} - E\left( \mathbf{X} \right) \right)^T \right) \\
-  &= \left[ \begin{matrix}
-    \mathrm{Var}\left( X_1 \right) & \mathrm{Cov}\left( X_1, X_2 \right) & \cdots & \mathrm{Cov}\left( X_1, X_n \right) \\
-    \mathrm{Cov}\left( X_2, X_1 \right) & \mathrm{Var}\left( X_2 \right) & \cdots & \mathrm{Cov}\left( X_2, X_n \right) \\
-    \vdots & \vdots & \ddots & \vdots \\
-    \mathrm{Cov}\left( X_n, X_1 \right) & \mathrm{Cov}\left( X_n, X_2 \right) & \cdots & \mathrm{Var}\left( X_n \right) \\
-  \end{matrix} \right]
-\end{align*}</script><h4 id="定理：-E-left-Y-right"><a href="#定理：-E-left-Y-right" class="headerlink" title="定理：$E\left( Y \right)$"></a>定理：$E\left( Y \right)$</h4><p>设 $A$ 为 $m \times n$ 非随机矩阵，$X$ 和 $b$ 分别为 $n \times 1$ 和 $m \times 1$ 随机向量，记 $Y = AX + b$，则</p>
-<script type="math/tex; mode=display">
-E\left( Y \right) = AE\left( X \right) + E\left( b \right).</script><h4 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h4><p>$\operatorname{tr}(\operatorname{Cov}\left( X \right)) = \sum_{i=1}^{n}\operatorname{Var}\left( X_i \right)$，这里 $\operatorname{tr}A$ 表示方阵 $A$ 的迹，即对角元素之和。</p>
-<h4 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h4><p>设 $X$ 为 $n \times 1$ 随机向量，则它的协方差阵必为半正定的对称阵。</p>
-<h4 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h4><p>设 $A$ 为 $m \times n$ 阵，$X$ 为 $n \times 1$ 随机向量，$Y = AX$，则 $\operatorname{Cov}\left( Y \right) = A \operatorname{Cov}\left( X \right) A^{\prime}$。</p>
-<h4 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h4><p>设 $X$ 和 $Y$ 分别为 $n \times 1, m \times 1$ 随机向量，$A$ 和 $B$ 分别为 $p \times n, q \times m$ 非随机矩阵，则</p>
-<script type="math/tex; mode=display">
-\operatorname{Cov}\left( AX, BY \right) = A \operatorname{Cov}\left( X, Y \right) B^{\prime}.</script><h2 id="随机向量的二次型"><a href="#随机向量的二次型" class="headerlink" title="随机向量的二次型"></a>随机向量的二次型</h2><h4 id="定理：-E-left-X-prime-AX-right"><a href="#定理：-E-left-X-prime-AX-right" class="headerlink" title="定理：$E\left( X^{\prime}AX \right)$"></a>定理：$E\left( X^{\prime}AX \right)$</h4><p>设 $E\left( X \right) = \mu, \operatorname{Cov}\left( X \right) = \Sigma$​，则</p>
-<script type="math/tex; mode=display">
-E\left( X^{\prime}AX \right) = \mu^{\prime}A\mu + \operatorname{tr}\left( A\Sigma \right).\tag{1}\label{期望}</script><p>注: 证明用到结论 $\mathrm{tr}\left( E\left( A \right) \right) = E\left( \mathrm{tr}\left( A \right) \right)$</p>
-<h4 id="推论-1"><a href="#推论-1" class="headerlink" title="推论"></a>推论</h4><p>设 $E\left( X \right) = \mu, \operatorname{Cov}\left( X \right) = \Sigma$，则</p>
-<script type="math/tex; mode=display">
-E\left( X^{\prime}AX \right) = \mu^{\prime}A\mu + \operatorname{tr}\left( A\Sigma \right).</script><ul>
-<li>若 $\mu = 0$ 则 $E\left( X^{\prime}AX \right) = \operatorname{tr}\left( A\Sigma \right)$。</li>
-<li>若 $\Sigma = \sigma^2 I$，则 $E\left( X^{\prime}AX \right) = \mu^{\prime}A\mu + \sigma^2 \operatorname{tr}\left( A \right)$。</li>
-<li>若 $\mu = 0, \Sigma = I$，则 $E\left( X^{\prime}AX \right) = \operatorname{tr}\left( A \right)$。</li>
-</ul>
+{\xi } ^{2} {f} ^{\prime \prime } \left( \xi \right)  - {2f} \left( \xi \right)  = 0</script><p>这题我感觉证明起来有些难度、有些步骤不容易想到、先给出答案、最后讲一下我的思路</p>
 <hr>
-<h2 id="样本方差是总体方差的无偏估计"><a href="#样本方差是总体方差的无偏估计" class="headerlink" title="样本方差是总体方差的无偏估计"></a>样本方差是总体方差的无偏估计</h2><h3 id="例题-1"><a href="#例题-1" class="headerlink" title="例题 1"></a>例题 1</h3><p>假设一维总体的均值为 $\mu$，方差为 $\sigma^2$。$X_1, \cdots, X_n$ 为从此总体中抽取的随机样本，试求样本方差</p>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>设$G\left( x \right) =\begin{cases}<br>    \dfrac{f\left( x \right)} {x^2} , x\in \left( 0,1 \right]\\<br>    0,      x=0\\<br>\end{cases} $ ,易验证$G(x)$ 在[0,1]上连续可导<br>当$x\ne 0$时:</p>
 <script type="math/tex; mode=display">
-{S}^{2} = \frac{1}{n - 1}\sum_{i=1}^{n}{\left( X_i - \bar{X} \right) }^{2}</script><p>的均值，这里 $\bar{X} = \frac{1}{n}\sum_{i=1}^{n} X_i$。</p>
+    G^{\prime} \left( x \right) =\frac{f^{\prime} \left( x \right) x^2-2xf\left( x \right)} {x^4} =\frac{f^{\prime} \left( x \right) -\dfrac{2} {x} f\left( x \right)} {x^2}</script><p>$G(0)=G(1)=0$由罗尔定理可知、存在$\xi_{1} \in (0,1)$  使得 $G^{\prime} (x) =0$即：</p>
+<script type="math/tex; mode=display">
+    f^{\prime} \left( \xi _1 \right) -\frac{2} { {\xi _1}  } f\left( \xi _1 \right) =0\Rightarrow {\xi _1} ^2f^{\prime} \left( \xi _1 \right) -2\xi _1f\left( \xi _1 \right) =0</script><p>设$H\left( x \right) =x^2f^{\prime} \left( x \right) -2xf\left( x \right)$ ,则$H(\xi_1)=H(0)=0$ 则由罗尔定理知:<br>存在$\xi_2\in(0,1)$使得$ H^{\prime} (x)^ =0$即:</p>
+<script type="math/tex; mode=display">
+    {\xi _2} ^2f^{\prime\prime} \left( \xi _2 \right) -2f\left( \xi _2 \right) =0</script><p>证毕</p>
 <hr>
-<p>常规解法:</p>
-<p>令 $Y_i = X_i - \mu$，则 $\bar{Y} = \bar{X} - \mu$。</p>
-<p>易得：</p>
-<p>$Y_i, Y_j \left( i \ne j \right)$ 相互独立，$\left( X_i - \bar{X} \right)^2 = \left( Y_i - \bar{Y} \right)^2$</p>
-<p>$E\left( Y_i \right) = 0, E\left( Y_i^2 \right) = D\left( Y_i \right) + E^2\left( Y_i \right) = \sigma^2$</p>
-<p>因此 $E\left( \bar{Y}^2 \right) = \frac{1}{n^2} E\left( \sum_{i=1}^n Y_i^2 + 2 \sum_{i \ne j}^n Y_i Y_j \right) = \frac{\sigma^2}{n}$</p>
-<p>故 $E\left( Y_i - \bar{Y} \right)^2 = E\left( Y_i^2 - 2 Y_i \bar{Y} + \bar{Y}^2 \right) = \sigma^2 - \frac{2}{n} E\left( Y_i^2 + \sum_{j \ne i} Y_i Y_j \right) + \frac{\sigma^2}{n} = \frac{n-1}{n} \sigma^2$</p>
-<p>再由期望的线性可加性可得 $E \left( S^2 \right) = \frac{n}{n-1} \frac{n-1}{n} \sigma^2 = \sigma^2$。</p>
-<hr>
-<p>记 $\mathbf{X} = \left( X_1, X_2, \cdots, X_n \right)^{\prime}$，$E_n$ 为 $n$ 阶单位矩阵，$I_n$ 为元素全为 1 的 $n$ 阶矩阵，</p>
-<p>$\mathbf{\bar{X}} = \left( \bar{X}, \bar{X}, \cdots, \bar{X} \right)^{\prime} = \frac{1}{n} I_n \mathbf{X}$</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-  &\sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \\
-  &= \left( \boldsymbol{X} - \bar{\boldsymbol{X}} \right)^{\prime} \left( \boldsymbol{X} - \bar{\boldsymbol{X}} \right) \\
-  &= \left( \boldsymbol{E}_{\boldsymbol{n}} \boldsymbol{X} - \frac{1}{n} I_n \boldsymbol{X} \right)^{\prime} \left( \boldsymbol{E}_{\boldsymbol{n}} \boldsymbol{X} - \frac{1}{n} I_n \boldsymbol{X} \right) \\
-  &= \boldsymbol{X}^{\prime} \boldsymbol{C}^{\prime} \boldsymbol{C} \boldsymbol{X} \\
-  &= \boldsymbol{X}^{\prime} \boldsymbol{C} \boldsymbol{X}
-\end{align*}</script><p>记 $\boldsymbol{C} = \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n$，并且注意到 $\boldsymbol{C} = \boldsymbol{C}^{\prime} = \boldsymbol{C}^2 ${幂等矩阵}</p>
-<p>应用公式$\ref{期望} $可得，$E(\boldsymbol{X}^{\prime}\boldsymbol{CX})=\mathbf{\mu}’\boldsymbol{C}\mathbf{\mu} + \mathrm{tr}(C\Sigma)$</p>
-<p>注意到</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-  \boldsymbol{\mu }^{\prime} \boldsymbol{C} \boldsymbol{\mu } &= \mu \left( 1, 1, \cdots 1 \right) \left( \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n \right) \left( 1, 1, \cdots 1 \right)^{\prime} \mu \\
-  &= \mu^2 \left( 1, 1, \cdots 1 \right) \left( \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n \right) \left( 1, 1, \cdots 1 \right)^{\prime}
-\end{align*}</script><p>又因为 $\left( \boldsymbol{E}_{\boldsymbol{n}} - \frac{1}{n} I_n \right) \left( 1, 1, \cdots 1 \right)^{\prime} = 0$，故 $\boldsymbol{\mu }^{\prime} \boldsymbol{C} \boldsymbol{\mu } = 0$</p>
-<p>由于 $X_i, X_j$ 相互独立、方差为 $\sigma^2$ 故 $\Sigma = \sigma^2 E_n$，易得 $\mathrm{tr}(C) = n - 1$</p>
-<p>故</p>
-<script type="math/tex; mode=display">
-\mathrm{tr} \left( C \Sigma \right) = \sigma^2 \mathrm{tr} \left( C \right) = \left( n - 1 \right) \sigma^2</script><p>综上可得:</p>
-<script type="math/tex; mode=display">
-E \left( \frac{1}{n-1} \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right) = E \left( \frac{1}{n-1} \boldsymbol{X}^{\prime} \boldsymbol{C} \boldsymbol{X} \right) = \sigma^2</script>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><script type="math/tex; mode=display">
+\begin{align*} 
+&x^2f^{''} \left( x \right) -2f\left( x \right) =0
+&\\
+&\Rightarrow x^2f^{''} \left( x \right) +2x^{\prime} f\left( x \right) -2x^{\prime} f\left( x \right) -2f\left( x \right) =0
+&\\
+&\Rightarrow \left( x^2f^{\prime} \left( x \right) \right) ^{\prime} -2\left( xf\left( x \right) \right) ^{\prime} =0
+&
+\end{align*}</script><p>设$H\left( x \right) =x^2f^{\prime} \left( x \right) -2xf\left( x \right)$ ,$H(0) =0$再找一个零点使用罗尔定理即可</p>
+<script type="math/tex; mode=display">x^2f^{\prime} \left( x \right) -2xf\left( x \right) =0\Rightarrow f^{\prime} \left( x \right) -\frac{2} {x} f\left( x \right) =0</script><p>构造$G\left( x \right) =f\left( x \right) e^{\int{-\frac{2} {x} dx}  } =\frac{f\left( x \right)} {x^2} ,G(1)=0$,但是这个$ G(x) $ 在$ 0 $ 处不连续、无法使用题目所给的条件<br>因此构造:</p>
+<script type="math/tex; mode=display">G\left( x \right) =\begin{cases} \dfrac{f\left( x \right)} {x^2} , x\in \left( 0,1 \right]\\0,      x=0\\
+\end{cases}</script><p>容易验证$G(0) =G(1)=0$且一阶连续可导、因此可以使用罗尔定理即$ G^{\prime} \left( \xi _1 \right) =0 $即$H\left( 0 \right) =H\left( \xi _1 \right) =0\Rightarrow H\left( \xi _2 \right) =0$ </p>
+
                 
             </div>
             <hr/>
@@ -516,7 +479,7 @@ E \left( \frac{1}{n-1} \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right) = E \
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2024/06/06/suijixiangliang/">http://example.com/2024/06/06/suijixiangliang/</a>
+                    <a href="http://example.com/2024/06/08/%E5%BE%AE%E7%A7%AF%E5%88%86/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">http://example.com/2024/06/08/%E5%BE%AE%E7%A7%AF%E5%88%86/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -553,7 +516,11 @@ E \left( \frac{1}{n-1} \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right) = E \
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
+                                    <span class="chip bg-color">中值定理</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -634,7 +601,56 @@ E \left( \frac{1}{n-1} \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right) = E \
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/06/07/latexxuexibiji/">
+                <a href="/2024/06/08/hexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="hexo常见问题解答">
+                        
+                        <span class="card-title">hexo常见问题解答</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/06/07/LaTeX%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
@@ -650,9 +666,9 @@ E \left( \frac{1}{n-1} \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right) = E \
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -672,47 +688,6 @@ E \left( \frac{1}{n-1} \sum_{i=1}^n \left( X_i - \bar{X} \right)^2 \right) = E \
                         <span class="chip bg-color">LaTeX</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/05/06/tongjiyinguotuilirumen/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="统计因果推理">
-                        
-                        <span class="card-title">统计因果推理</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-06
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8/" class="post-category">
-                                    统计因果推理入门
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
