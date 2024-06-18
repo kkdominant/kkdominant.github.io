@@ -5,10 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="hexo常见问题解答, Chuanshanak">
-    <meta name="description" content="hexo的Matery主题代码块显示问题你的代码块是否显示为这样?
+    <meta name="description" content="1 hexo的Matery主题代码块显示问题你的代码块是否显示为这样?
 
 尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果代码链接highlight:                      # 代码块的设置
-  enable:">
+  enabl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -402,7 +402,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    638
+                    639
                 </div>
                 
 
@@ -432,7 +432,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="hexo的Matery主题代码块显示问题"><a href="#hexo的Matery主题代码块显示问题" class="headerlink" title="hexo的Matery主题代码块显示问题"></a>hexo的Matery主题代码块显示问题</h2><p>你的代码块是否显示为这样?</p>
+                <h2 id="1-hexo的Matery主题代码块显示问题"><a href="#1-hexo的Matery主题代码块显示问题" class="headerlink" title="1 hexo的Matery主题代码块显示问题"></a>1 hexo的Matery主题代码块显示问题</h2><p>你的代码块是否显示为这样?</p>
 <p><img src="https://kkdominant.oss-cn-shanghai.aliyuncs.com/img/20240617221035.png" alt=""></p>
 <p>尝试过各种方法都没有效果、比如卸载插件,和下面的方法都没有效果<a target="_blank" rel="noopener" href="https://www.cnblogs.com/jijunhao/p/16972921.html">代码链接</a><br></p><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">highlight</span><span class="token punctuation">:</span>                      <span class="token comment"># 代码块的设置</span>
   <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment"># 开启代码块高亮</span>
@@ -586,7 +586,7 @@ hexo hexo cl &amp; hexo g -d
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
                         <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
@@ -1215,6 +1215,21 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
