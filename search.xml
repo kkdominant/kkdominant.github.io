@@ -45,9 +45,9 @@
       
         <tags>
             
-            <tag> 数理统计 </tag>
-            
             <tag> 统计学 </tag>
+            
+            <tag> 数理统计 </tag>
             
             <tag> 统计推断 </tag>
             
@@ -185,6 +185,25 @@
     
     
     <entry>
+      <title>统计因果推理</title>
+      <link href="/posts/63757.html"/>
+      <url>/posts/63757.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>分享一些统计因果推理的书籍、点击可以可以查看</strong></p><p>第一本书由于未经允许、不能分享、这里分享一个原作者的主页、</p><p><a href="https://bayes.cs.ucla.edu/PRIMER/">英文版统计因果推理入门</a></p><!-- [统计因果推理入门参考答案](https://github.com/kkdominant/kkdominant.github.io/blob/main/file/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD%E5%85%A5%E9%97%A8/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88.pdf)[中文版统计因果推理入门](https://github.com/kkdominant/kkdominant.github.io/blob/main/file/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD%E5%85%A5%E9%97%A8/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8%EF%BC%88%E7%BF%BB%E8%AF%91%E7%89%88%EF%BC%89%20(Nicholas%20P.Jewell%20%20%2C%20Judea%20Pearl%20etc.)%20(Z-Library).pdf) -->]]></content>
+      
+      
+      <categories>
+          
+          <category> 统计因果推理入门 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>积分</title>
       <link href="/posts/20469.html"/>
       <url>/posts/20469.html</url>
@@ -204,25 +223,6 @@
             <tag> 不定积分 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>统计因果推理</title>
-      <link href="/posts/63757.html"/>
-      <url>/posts/63757.html</url>
-      
-        <content type="html"><![CDATA[<p><strong>分享一些统计因果推理的书籍、点击可以可以查看</strong></p><p>第一本书由于未经允许、不能分享、这里分享一个原作者的主页、</p><p><a href="https://bayes.cs.ucla.edu/PRIMER/">英文版统计因果推理入门</a></p><!-- [统计因果推理入门参考答案](https://github.com/kkdominant/kkdominant.github.io/blob/main/file/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD%E5%85%A5%E9%97%A8/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88.pdf)[中文版统计因果推理入门](https://github.com/kkdominant/kkdominant.github.io/blob/main/file/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD%E5%85%A5%E9%97%A8/%E7%BB%9F%E8%AE%A1%E5%9B%A0%E6%9E%9C%E6%8E%A8%E7%90%86%E5%85%A5%E9%97%A8%EF%BC%88%E7%BF%BB%E8%AF%91%E7%89%88%EF%BC%89%20(Nicholas%20P.Jewell%20%20%2C%20Judea%20Pearl%20etc.)%20(Z-Library).pdf) -->]]></content>
-      
-      
-      <categories>
-          
-          <category> 统计因果推理入门 </category>
-          
-      </categories>
-      
       
     </entry>
     
