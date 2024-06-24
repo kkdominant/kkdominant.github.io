@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>数学公式计算器</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .one {
+            margin-left: 16px;
+        }
+
+        textarea {
+            width: 500px;
+            height: 200px;
+            display: block;
+            margin-top: 10px;
+            background-color: cyan;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            resize: none;
+        }
+
+        .button-container {
+            margin-top: 10px;
+            text-align: center;
+            padding-right: 200px;
+        }
+
+        input[type="button"] {
+            background-color: lightblue;
+            border: none;
+            color: rgb(20, 20, 20);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 50px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="button"]:hover {
+            background-color: lightblue;
+        }
+
+        .label-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>数学公式计算器</h2>
+        <div class="label-container">
+            <label for="function-input">输入函数：</label>
+            <textarea id="function-input"></textarea>
+        </div>
+        <p class="one">
+            操作：
+            <input type="button" value="计算导数" onClick="calculateDerivative()">
+            <input type="button" value="计算定积分" onClick="calculateIntegral()">
+        </p>
+        <div class="label-container">
+            <label for="result">结果：</label>
+            <textarea id="result"></textarea>
+        </div>
+        <div class="button-container">
+            <input type="button" value="复制" onClick="copyText()">
+            <input type="button" value="清空" onClick="clearText()">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.2/math.min.js"></script>
+    <script>
+        function calculateDerivative() {
+            var input = document.getElementById("function-input").value;
+            try {
+                var node = math.parse(input);
+                var derivative = math.derivative(node, 'x');
+                document.getElementById("result").value = derivative.toString();
+            } catch (err) {
+                document.getElementById("result").value = 'Error: ' + err.message;
+            }e
+        }
+
+        function calculateIntegral() {
+            var input = document.getElementById("function-input").value;
+            try {
+                var node = math.parse(input);
+                var integral = math.integral(node, 'x');
+                document.getElementById("result").value = integral.toString();
+            } catch (err) {
+                document.getElementById("result").value = 'Error: ' + err.message;
+            }
+        }
+
+        function copyText() {
+            var copyText = document.getElementById("result");
+            copyText.select();
+            document.execCommand("copy");
+        }
+
+        function clearText() {
+            document.getElementById("function-input").value = "";
+            document.getElementById("result").value = "";
+        }
+    </script>
+</body>
+
+</html>

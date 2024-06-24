@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>数学公式环境</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .one {
+            margin-left: 16px;
+        }
+
+        textarea {
+            width: 500px;
+            height: 200px;
+            display: block;
+            /* 让文本框独占一行 */
+            margin-top: 10px;
+            /* 增加顶部间距 */
+            background-color: rgb(222, 240, 240);
+            /* 设置背景颜色 */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            resize: none;
+            /* 禁止调整大小 */
+        }
+
+        .button-container {
+            margin-top: 10px;
+            text-align: center;
+            /* padding-right: 200px; */
+            /* 根据需要调整数值 */
+        }
+
+        input[type="button"] {
+            background-color: lightblue;
+            /* 背景 */
+            border: none;
+            color: rgb(20, 20, 20);
+            /* 文字 */
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 50px;
+            /* 调整按钮之间的间距 */
+            cursor: pointer;
+            border-radius: 5px;
+            /* 圆角 */
+        }
+
+        input[type="button"]:hover {
+            background-color: lightblue;
+            /* 浅绿色背景 */
+        }
+
+        .label-container {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>数学公式环境</h2>
+        <div class="label-container">
+            <label for="old">原数据：</label>
+            <textarea id="old"></textarea>
+        </div>
+        <p class="one">
+            操作：
+            <input type="button" value="align环境" onClick="deal('align')">
+            <input type="button" value="equation环境" onClick="deal('equation')">
+        </p>
+        <div class="label-container">
+            <label for="new">新数据：</label>
+            <textarea id="new"></textarea>
+        </div>
+        <div class="button-container">
+            <input type="button" value="复制" onClick="copyText()">
+            <input type="button" value="清空" onClick="clearText()">
+        </div>
+    </div>
+    <script>
+        function deal(opt) {
+            var str = document.getElementById("old").value;
+            var lines = str.split('\n').map(line => '&' + line).join('\n'); // 添加&符号
+            if (opt === 'align') str = `\\begin{align}\n${lines}\n\\end{align}`;
+            if (opt === 'equation') str = `\\begin{equation}\n${lines}\n\\end{equation}`;
+            document.getElementById("new").value = str;
+        }
+
+        function copyText() {
+            var copyText = document.getElementById("new");
+            copyText.select();
+            document.execCommand("copy");
+        }
+
+        function clearText() {
+            document.getElementById("old").value = "";
+            document.getElementById("new").value = "";
+        }
+    </script>
+</body>
+
+</html>
