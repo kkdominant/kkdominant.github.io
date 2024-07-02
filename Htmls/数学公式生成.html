@@ -86,7 +86,7 @@
         </div>
         <p class="one">
             操作：
-            <input type="button" value="align环境" onClick="deal('align')">
+            <input type="button" value="align*环境" onClick="deal('align')">
             <input type="button" value="equation环境" onClick="deal('equation')">
         </p>
         <div class="label-container">
@@ -102,7 +102,7 @@
         function deal(opt) {
             var str = document.getElementById("old").value;
             var lines = str.split('\n').map(line => '&' + line).join('\n'); // 添加&符号
-            if (opt === 'align') str = `\\begin{align}\n${lines}\n\\end{align}`;
+            if (opt === 'align') str = `\\begin{align*}\n${lines}\n\\end{align*}`;
             if (opt === 'equation') str = `\\begin{equation}\n${lines}\n\\end{equation}`;
             document.getElementById("new").value = str;
         }
