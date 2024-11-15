@@ -1,3 +1,4 @@
+http://example.com/posts/1115.html
 http://example.com/posts/49033.html
 http://example.com/posts/2024927.html
 http://example.com/posts/202485.html
@@ -42,6 +43,9 @@ http://example.com/tags/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD/
 http://example.com/tags/Bayes/
 http://example.com/tags/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/
 http://example.com/tags/UMVUE/
+http://example.com/tags/Cauchy/
+http://example.com/tags/MLE/
+http://example.com/tags/Gauss%E2%80%93-Newton/
 http://example.com/categories/Stata/
 http://example.com/categories/hexo/
 http://example.com/categories/LaTeX/
@@ -53,3 +57,4 @@ http://example.com/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/
 http://example.com/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/
 http://example.com/categories/%E7%BB%9F%E8%AE%A1%E5%AD%A6/
 http://example.com/categories/%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD/
+http://example.com/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/
